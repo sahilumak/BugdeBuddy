@@ -16,7 +16,7 @@ db = SQLAlchemy(app)
 
 @app.route('/')
 def front():
-    return render_template('front.html')
+    return render_template('Front.html')
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
